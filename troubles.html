@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Jardin d'Hypnos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { 
+            font-family: Didot, serif; 
+            background-color: #f0f0f0; 
+            color: black; 
+            margin: 0; 
+            padding: 0; 
+        }
+
+        header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+        }
+
+        .slideshow {
+    display: flex;
+    width: 300%; 
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slide 20s linear infinite;
+        }
+
+        .slideshow img {
+    width: 100vw; 
+    height: 100%;
+    object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }            
+            25% { transform: translateX(-100vw); }      
+            50% { transform: translateX(-200vw); }     
+            100% { transform: translateX(0); }     
+        }
+        }
+
+        nav {
+            background-color: #17202a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .bubble {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border: 2px solid #d1d1d1;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .bubble img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .bubble .text {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .video-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .video-container video {
+            width: 80%;
+            max-width: 600px;
+            display: block;
+            margin: auto;
+        }
+
+        footer {
+            background-color: #1b4f72;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        
+            header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2; 
+            color: black;
+            font-size: 72px;
+			font-weight: bold;
+            margin: 0;
+            }
+
+            header h2 {
+			position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2; 
+            color: black;
+            font-size: 20px;
+			margin: 0;
+            }
+			
+
+            nav {
+                display: flex;
+                flex-direction: row;
+				justify-content: center;
+                align-items: center;
+                padding: 10px;
+            }
+
+            nav a {
+                display: block;
+                padding: 10px;
+                font-size: 17px;
+            }
+
+            .bubble {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .bubble img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+	<div class="slideshow">
+        <img src="accueil1.jpg" alt="Image 1">
+        <img src="accueil2.jpg" alt="Image 2">
+        <img src="accueil3.jpg" alt="Image 3">
+		<img src="accueil4.jpg" alt="Image 4">
+		<img src="accueil5.jpg" alt="Image 5">
+    </div>
+        <h1>Le Jardin d'Hypnos</h1>
+        <h2>Sensibilisation à l'importance du sommeil</h2>
+    </header>
+
+    <nav>
+        <a href="accueil.html">Accueil</a>
+        <a href="troubles.html">Troubles du sommeil</a>
+        <a href="statistiques.html">Statistiques sur le Sommeil</a>
+        <a href="solutions.html">Solutions psychiques et techniques</a>
+    </nav>
+
+ 
+    <div class="video-container">
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/xZ2a_U5O0M4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <section>
+    <h2>TROUBLES DU SOMMEIL</h2>
+	
+	<div class="bubble">    
+        <p>Les troubles du sommeil sont des conditions courantes qui affectent la qualité, la durée et le rythme du sommeil, et peuvent avoir un impact significatif sur la santé physique et mentale. Voici une explication détaillée des différents types de troubles du sommeil et de leurs conséquences. Il est important de comprendre leurs symptômes et les facteurs qui les déclenchent.</p>
+        <p>L’insomnie est l’une des causes principales des troubles du sommeil. Elle se caractérise par des difficultés à s’endormir, à rester endormi ou par un sommeil de mauvaise qualité, malgré des conditions propice au repos. Elle peut conduire par la suite à des cauchemars ou encore des terreurs nocturnes qui vont entraîner de la fatigue, des troubles de l’humeur et des difficultés de concentration durant la journée.</p>
+         <div style="text-align: center;">
+    </div>
+	 </div>
+	
+	<div style="text-align: center;">
+    <img src="troubles1.jpg" alt="Image centrée" width="500" height="400">
+	</div>
+	
+    <div class="bubble">    
+<p>La respiration peut également être une cause des troubles du sommeil. Dans le cas où les voies respiratoires sont partiellement ou totalement obstruées par le sommeil, cela peut provoquer des troubles respiratoires entraînant des ronflements ou une apnée du sommeil pouvant provoquer des problèmes cardiovasculaires ou encore des problèmes de mémoire.</p>
+        <div style="text-align: center;">
+	</div>
+	 </div>
+	
+	<div style="text-align: center;">
+    <img src="troubles2.jpg" alt="Image centrée" width="500" height="400">
+	</div>
+	
+    <div class="bubble">    
+<p>Autre cause des troubles du sommeil : les mouvements et le comportement. Les cycles de sommeil normaux peuvent être perturbé par des mouvements répétitifs pouvant perturber le sommeil en provoquant des réveils fréquents ou des difficultés à dormir tel qu’avec le syndrome des jambes sans repos, le fait de se lever et de se déplacer pendant le sommeil peut causer des réveils inattendus et des blessures tel qu’avec le somnambulisme et la privation de sommeil, le stress ou encore l’anxiété peuvent entraîner de la peur ainsi qu’une fatigue physique ou mentale par le biais de paralysie du sommeil. </p>
+        <div style="text-align: center;">
+	</div>
+	</div>
+	
+	<div style="text-align: center;">
+    <img src="troubles3.webp" alt="Image centrée" width="500" height="400">
+	</div>
+
+    <div class="bubble">    
+<p>La somnolence diurne excessive est un état de fatigue intense durant la journée, où la personne ressent un besoin très fort de dormir, même après avoir dormi la nuit. Cette somnolence peut se manifester sous la forme de narcolepsie ou encore hypersomnie rendant difficile la concentration et affectant les activités quotidiennes.</p>
+   </div>
+	
+   </section>
+
+    <footer>
+        <p>&copy; 2025 Sensibilisation au Sommeil - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Jardin d'Hypnos</title>
+    <link rel="stylesheet" href="styles.css">
+	
+    <style>
+        body { 
+            font-family: Didot, serif; 
+            background-color: #f0f0f0; 
+            color: black; 
+            margin: 0; 
+            padding: 0; 
+        }
+
+        header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+        }
+
+        .slideshow {
+    display: flex;
+    width: 300%; 
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slide 20s linear infinite;
+        }
+
+        .slideshow img {
+    width: 100vw; 
+    height: 100%;
+    object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }            
+            25% { transform: translateX(-100vw); }      
+            50% { transform: translateX(-200vw); }     
+            100% { transform: translateX(0); }     
+        }
+        }
+
+        nav {
+            background-color: #17202a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .bubble {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border: 2px solid #d1d1d1;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .bubble img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .bubble .text {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .video-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .video-container video {
+            width: 80%;
+            max-width: 600px;
+            display: block;
+            margin: auto;
+        }
+
+        footer {
+            background-color: #1b4f72;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        
+            header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2; 
+            color: black;
+            font-size: 72px;
+			font-weight: bold;
+            margin: 0;
+            }
+
+            header h2 {
+			position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2; 
+            color: black;
+            font-size: 20px;
+			margin: 0;
+            }
+			
+
+            nav {
+                display: flex;
+                flex-direction: row;
+				justify-content: center;
+                align-items: center;
+                padding: 10px;
+            }
+
+            nav a {
+                display: block;
+                padding: 10px;
+                font-size: 17px;
+            }
+
+            .bubble {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .bubble img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <header>
+    <div class="slideshow">
+        <img src="accueil1.jpg" alt="Image 1">
+        <img src="accueil2.jpg" alt="Image 2">
+        <img src="accueil3.jpg" alt="Image 3">
+		<img src="accueil4.jpg" alt="Image 4">
+		<img src="accueil5.jpg" alt="Image 5">
+    </div>
+    <h1>Le Jardin d'Hypnos</h1>
+    <h2>Sensibilisation à l'importance du sommeil</h2>
+</header>
+
+    <nav>
+        <a href="accueil.html">Accueil</a>
+        <a href="troubles.html">Troubles du sommeil</a>
+        <a href="statistiques.html">Statistiques sur le Sommeil</a>
+        <a href="solutions.html">Solutions psychiques et techniques</a>
+    </nav>
+
+    <section>
+        <h2>STATISTIQUES SUR LE SOMMEIL</h2>
+        
+        <div class="video-container">
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+        </div>
+        
+        <div class="bubble">
+            <img src="stat1.png" alt="Statistiques sur le sommeil">
+            <p class="text">En 2023, les Français dormaient en moyenne 6h58 la semaine et 7h40 le week-end, soit une perte de 15 à 16 minutes de sommeil. Et cette tendance s'inscrit dans le temps long, alerte l'INSV. En 2019, ils jouissaient en moyenne de 6h57 de sommeil du lundi au vendredi et de 8h14 pendant leurs jours de repos.
+Les humains passent près d’un tiers de leur vie à dormir et il est parfaitement établi que leur sommeil est crucial pour le bon fonctionnement de nombreuses fonctions biologiques : développement, mémoire et apprentissage, métabolisme, immunité… Mais différents troubles affectent le sommeil d’une proportion importante et croissante de la population. Une situation qui conduit à s’interroger sur les conséquences de ces troubles sur la santé de la population générale. Les chercheurs étudient leurs associations avec différentes pathologies et tentent en parallèle de comprendre ce qui détermine précisément la qualité ou la durée du sommeil. Avec l’essor des neurosciences, les connaissances progressent. De quoi affirmer encore plus fermement l’importance du sommeil.</p>
+        </div>
+
+        <div class="bubble">    
+            <p class="text">D’après le baromètre de Santé Publique France, le temps de sommeil des adultes était en moyenne de 6 heures 42 minutes par 24 heures durant la semaine (ou les jours travaillés) en 2017, soit en dessous des 7 heures minimales quotidiennes habituellement recommandées. Il était de 7 h 26 le week-end (ou les jours de repos), conduisant au final à un temps moyen de sommeil de 6 h 55.</p>
+        </div> 
+
+        <div class="bubble">
+            <p class="text">Ce temps de sommeil évolue avec l’âge : de 7 h 24 chez les 18–24 ans, il diminue jusqu’à 6 h 35 chez les 45–54 ans, puis il remonte à 6 h 48 chez les 55–64 ans  et 6 h 58 pour les plus âgés (65–75 ans). Plus d’un tiers des 18–75 ans (36 %) dorment moins de 6 heures par nuit, sans différence significative entre hommes et femmes.</p>
+            <img src="stat2.jpeg" alt="Évolution du sommeil">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sensibilisation au Sommeil - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
